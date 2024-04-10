@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Banking System</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Net Banking</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Loan</a>
+            <a class="dropdown-item" href="#">Credit Card</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Deposit</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <h1>Welcome To Our Branch</h1>
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fimg.freepik.com%2Ffree-vector%2Fbank-building-with-cityscape_1284-52265.jpg%3Fw%3D2000&tbnid=Wc3xa06VEqf1lM&vet=12ahUKEwiR8OKG1tyAAxXEz6ACHXpUDfAQMygAegUIARDuAQ..i&imgrefurl=https%3A%2F%2Fwww.freepik.com%2Ffree-photos-vectors%2Fbank&docid=4t-sdi3O5H-GGM&w=2000&h=1636&q=bank%20images&ved=2ahUKEwiR8OKG1tyAAxXEz6ACHXpUDfAQMygAegUIARDuAQ"
+          class="d-block w-100" alt="..." />
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.shutterstock.com%2Fshutterstock%2Fphotos%2F1999589969%2Fdisplay_1500%2Fstock-photo--d-rendering-of-credit-card-with-bank-building-clipping-path-included-1999589969.jpg&tbnid=81CRw7fxuz1vXM&vet=12ahUKEwiR8OKG1tyAAxXEz6ACHXpUDfAQMygLegUIARCFAg..i&imgrefurl=https%3A%2F%2Fwww.shutterstock.com%2Fsearch%2Fbank&docid=Qx1I51n6bmI9YM&w=1500&h=1225&q=bank%20images&ved=2ahUKEwiR8OKG1tyAAxXEz6ACHXpUDfAQMygLegUIARCFAg"
+          class="d-block w-100" alt="..." />
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fmedia.istockphoto.com%2Fid%2F640267784%2Fphoto%2Fbank-building.jpg%3Fs%3D612x612%26w%3D0%26k%3D20%26c%3DUTtm4t6WR-MLwO6ATq5l6n3SoCc6HpaClEFZMxO1Nek%3D&tbnid=VtoP5HL6SQ5jyM&vet=12ahUKEwiR8OKG1tyAAxXEz6ACHXpUDfAQMygNegUIARCKAg..i&imgrefurl=https%3A%2F%2Fwww.istockphoto.com%2Fphoto%2Fbank-building-gm640267784-115885417&docid=_gCDh_9q5oBlbM&w=612&h=439&q=bank%20images&ved=2ahUKEwiR8OKG1tyAAxXEz6ACHXpUDfAQMygNegUIARCKAg"
+          class="d-block w-100" alt="..." />
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <h1>Banking System Application</h1>
+    <button type="button" id="openBtn" class="btn btn-outline-primary">
+      <b>Open Accounts</b>
+    </button>
+    <button type="button" id="displayBtn" class="btn btn-outline-danger">
+      <b>Display all account details</b>
+    </button>
+    <button type="button" id="searchBtn" class="btn btn-outline-warning">
+      <b>Search by Account number</b>
+    </button>
+    <button type="button" id="depositBtn" class="btn btn-outline-success">
+      <b>Deposit the amount</b>
+    </button>
+    <button type="button" id="withdrawBtn" class="btn btn-outline-dark">
+      <b>Withdraw the amount</b>
+    </button>
+    <button type="button" id="transferBtn" class="btn btn-outline-primary">
+      <b>Transfer Money</b>
+    </button>
+    <button type="button" id="interestBtn" class="btn btn-outline-success">
+      <b>Calculate Interest</b>
+    </button>
+    <button type="button" id="changeDetailsBtn" class="btn btn-outline-primary">
+      <b>Change Account Details</b>
+    </button>
+    <button type="button" id="closeAccountBtn" class="btn btn-outline-danger">
+      <b>Close Account</b>
+    </button>
+    <button type="button" id="exitBtn" class="btn btn-outline-secondary">
+      <b>Exit</b>
+    </button>
+    <div id="output"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
